@@ -51,24 +51,6 @@ button{
 .navegacion ul a:hover{
     color: #F8F5EC;
 }
-/* .container{
-    width: 100%;
-    height: 832px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 10px rgba(0,0,0,25%) inset;
-}
-.login{
-    width: 40%;
-    height: 748.8px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5834D;
-    border-radius: 25px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
-} */
 .login{
     width: 100%;
     height: 832px;
@@ -96,11 +78,52 @@ button{
 }
 .container input{
     width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
 }
 .btns{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 0;
 }
-.btns input{
-    width: 20px;
+.remember-me{
+    width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #50413C;
+    font-family: 'Kreon', serif;
+    font-size: 20px;
+}
+.btns a{
+    text-decoration: none;
+    color: #50413C;
+    font-family: 'Kreon', serif;
+    font-size: 20px;
+    transition: .5s;
+}
+#recordar{
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+.container button{
+    width: 60%;
+    height: 50px;
+    margin: 50px 20%;
+    border: none;
+    border-radius: 10px;
+    color: #F5834D;
+    font-family: 'Kreon', serif;
+    font-size: 24px;
+    transition: .5s;
+}
+.btns a:hover{
+    color: #FFFFFF;
+}
+.container button:hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
 }
