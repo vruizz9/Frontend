@@ -84,6 +84,10 @@ button{
     border: none;
     box-shadow: 4px 4px 10px rgba(0,0,0,25%);
 }
+::placeholder{
+    font-family: 'Kreon', serif;
+    font-size: 20px;
+}
 .btns{
     display: flex;
     justify-content: space-between;
@@ -116,7 +120,7 @@ button{
     margin: 50px 20%;
     border: none;
     border-radius: 10px;
-    color: #F5834D;
+    color: #50413C;
     font-family: 'Kreon', serif;
     font-size: 24px;
     transition: .5s;
@@ -126,4 +130,6 @@ button{
 }
 .container button:hover{
     box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    color: #50413C;
+    background-color: #FFCC63;
 }
