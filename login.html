@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style3.css">
     <script src="https://kit.fontawesome.com/27010df775.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="functions.js"></script>
     <title>PetShop</title>
 </head>
 <body>
     <section>
+        <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html" target="_self">Home</a>
+            <a href="#">Birds</a>
+            <a href="#">Cats</a>
+            <a href="petshop.html" target="_self">Dogs</a>
+            <a href="#">Rodent</a>
+            <a href="#">Rabbit</a>
+            <a href="login.html" target="_self"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <nav class="topnav">
+            <a href="#" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+            
         <nav class="navegacion">
             <ul>
                 <img class="logo" src="Images/logo.svg" alt="logo">
@@ -37,9 +55,9 @@
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
             </ul>
-        </nav>
+       </nav>
     </section>
-    <section>
+    <section id="main">
         <div class="login">
             <div class="container">
                 <i class="fa-solid fa-user"></i>
