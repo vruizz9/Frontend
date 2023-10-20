@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F5EC;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+.sidenav{
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFCC63;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+    display: none;
+}
+.sidenav a{
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Kreon', serif;
+    text-align: center;
+    color: #50413C;
+    display: block;
+    transition: 0.5s
+}
+.sidenav a:hover{
+    color: #F8F5EC;
+    background-color: #F5834D;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+}
+#main{
+    transition: margin-left .5s;
+    overflow:hidden;
+    width:100%;
+}
+.topnav{
+    background-color: #FFCC63;
+    overflow: hidden;
+    display: none;
+}
+.topnav a{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50413C;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+.topnav a:hover{
+    color: #F8F5EC;
+    background-color: #F5834D;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.navegacion{
+    display: flex;
+    background-color: #FFCC63;
+}
+.navegacion ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+}
+.navegacion ul li{
+    border-radius: 15px;
+    transition: .5s;
+}
+.navegacion ul li a{
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    color: #50413C;
+    font-family: 'Kreon', serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.navegacion ul li:hover{
+    background-color: #F5834D;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+}
+.navegacion ul a:hover{
+    color: #F8F5EC;
+}
+.presentation{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%) inset;
+}
+.presentation div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.presentation img{
+    width: 100%;
+    height: 680px;
+}
+.presentation p{
+    width: 100%;
+    text-align: center;
+    color: #50413C;
+    font-family: 'Kreon', serif;
+    font-size: 45px;
+    margin: 0 95px;
+}
+.services{
+    width: 100%;
+    height: 1000px;
+    background-color: #FFCC63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%) inset;
+}
+.categories{
+    width: 90%;
+    height: 700px;
+    background-color: #F8F5EC;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+}
+.categories p{
+    text-align: center;
+    color: #50413C;
+    position: relative;
+    top: 55px;
+    font-family: 'Kreon', serif;
+    font-size: 45px;
+}
+.cards {
+    width: 100%;
+    height: 642px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 23.9%;
+    height: 400px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s;
+}
+.content a{
+    color: #F8F5EC;
+    margin: 10px 0;
+    font-family: 'Kreon', serif;
+    font-size: 35px;
+    text-decoration: none;
+}
+.card:hover .content{
+    opacity: 1;
+    background: rgba(0,0,0,25%);
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #F8F5EC;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%) inset;
+}
+.info{
+    width: 40%;
+}
+.info p{
+    width: 100%;
+    text-align: center;
+    color: #50413C;
+    font-family: 'Kreon', serif;
+    font-size: 35px;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icons div{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #FFCC63;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #50413C;
+    margin: 60px 15px;
+    border-radius: 15px;
+    transition: .5s;
+}
+.icons div:hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    background-color:#F5834D;
+    color: #F8F5EC;
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .presentation img{
+        width: 110%;
+    }
+    .card{
+        width: 28.9%;
+        background-position: center;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1439px) {
+    .navegacion ul li a{
+        width: 75px;
+    }
+    .presentation{
+        justify-content: space-evenly
+    }
+    .presentation img{
+        width: 110%;
+    }
+    .presentation div{
+        justify-content: center;
+    }
+    .presentation p{
+        font-size: 32px;
+        margin: 0 75px;
+    }
+    .card{
+        width: 28.9%;
+        height: 300px;
+        background-position: center;
+    }
+}
+@media (min-width: 720px) and (max-width: 1365px) {
+    .navegacion{
+        display: none;
+    }
+    .sidenav{
+        display: block;
+    }
+    .topnav{
+        display: block;
+    }
+    .presentation{
+        height: 750px;
+        flex-direction: column-reverse;
+    }
+    .presentation div{
+        width: 100%;
+        height: 44vh;
+    }
+    .presentation p{
+        font-size: 36px;
+    }
+    .presentation img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: -40px;
+    }
+    .services{
+        height: 1800px;
+    }
+    .categories{
+        height: 1590px;
+    }
+    .categories p{
+        top: 35px;
+        font-size: 36px;
+    }
+    .cards{
+        height: 1500px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card{
+        width: 62.9%;
+    }
+    .footer{
+        height: 260px;
+    }
+    .info p{
+        font-size: 26px;
+    }
+    .icons div{
+        margin: 40px 15px;
+    }
+}
+@media (min-width: 375px) and (max-width: 719px) {
+    .navegacion{
+        display: none;
+    }
+    .sidenav{
+        display: block;
+    }
+    .sidenav a{
+        font-size: 18px;
+    }
+    .topnav{
+        display: block;
+    }
+    .presentation{
+        height: 500px;
+        flex-direction: column-reverse;
+    }
+    .presentation div{
+        width: 100%;
+        height: 30vh;
+    }
+    .presentation p{
+        font-size: 24px;
+        margin: 0 50px;
+    }
+    .presentation img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 240px;
+    }
+    .services{
+        height: 1300px;
+    }
+    .categories{
+        height: 1100px;
+    }
+    .categories p{
+        top: 35px;
+        font-size: 24px;
+    }
+    .cards{
+        height: 1050px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card{
+        width: 75.9%;
+        height: 255px;
+    }
+    .footer{
+        height: 200px;
+    }
+    .info{
+        width: 50%;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .icons div{
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        margin: 30px 15px;
+    }
+}
+@media (min-width: 360px) and (max-width: 374px) {
+    .navegacion{
+        display: none;
+    }
+    .sidenav{
+        display: block;
+    }
+    .sidenav a{
+        font-size: 18px;
+    }
+    .topnav{
+        display: block;
+    }
+    .presentation{
+        height: 500px;
+        flex-direction: column-reverse;
+    }
+    .presentation div{
+        width: 100%;
+        height: 30vh;
+    }
+    .presentation p{
+        font-size: 24px;
+        margin: 0 45px;
+    }
+    .presentation img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 240px;
+    }
+    .services{
+        height: 1300px;
+    }
+    .categories{
+        height: 1100px;
+    }
+    .categories p{
+        top: 35px;
+        font-size: 24px;
+    }
+    .cards{
+        height: 1050px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card{
+        width: 75.9%;
+        height: 255px;
+    }
+    .footer{
+        height: 200px;
+    }
+    .info{
+        width: 50%;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .icons div{
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        margin: 30px 15px;
+    }
+}
