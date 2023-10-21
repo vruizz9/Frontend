@@ -1,3 +1,4 @@
+/* importación de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
@@ -236,6 +237,7 @@ button{
     background-color:#F5834D;
     color: #F8F5EC;
 }
+/* diseño adaptativo a los diferentes dispositivos */
 @media (min-width: 1440px) and (max-width: 1919px) {
     .presentation img{
         width: 110%;
