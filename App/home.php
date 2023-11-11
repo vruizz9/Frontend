@@ -16,7 +16,7 @@
     <CENTER>
         <h1>Home</h1>
     </CENTER>
-    <a href="php/cerrar_sesion.php" class="btn btn-danger" style="width: 10%;display: flex;justify-content: center;margin: auto;color: #fff;background-color: #dc3545;border-color: #dc3545;">Log Out</a>
+    <a href="cerrar_sesion.php" class="btn btn-danger" style="width: 10%;display: flex;justify-content: center;margin: auto;color: #fff;background-color: #dc3545;border-color: #dc3545;">Log Out</a>
 </body>
 </html>
 
