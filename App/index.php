@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style1.css">
+    <link rel="stylesheet" href="Css/style1.css?v=<?php echo(rand()); ?>">
     <link rel="icon" href="Images/logo.svg">
     <script src="https://kit.fontawesome.com/27010df775.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="functions.js?v=<?php echo(rand()); ?>"></script>
     <title>PetShop</title>
 </head>
 <body>
@@ -14,13 +14,13 @@
     <section>
         <nav id="sideNavigation" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html" target="_self">Home</a>
+            <a href="index.php" target="_self">Home</a>
             <a href="#">Birds</a>
             <a href="#">Cats</a>
-            <a href="petshop.html" target="_self">Dogs</a>
+            <a href="petshop.php" target="_self">Dogs</a>
             <a href="#">Rodent</a>
             <a href="#">Rabbit</a>
-            <a href="login.html" target="_self"><i class="fa-solid fa-user"></i></a>
+            <a href="login.php" target="_self"><i class="fa-solid fa-user"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
         <nav class="topnav">
@@ -33,7 +33,7 @@
             <ul>
                 <img class="logo" src="Images/logo.svg" alt="logo">
                 <li>
-                    <a href="home.html" target="_self">Home</a>
+                    <a href="index.php" target="_self">Home</a>
                 </li>
                 <li>
                     <a href="#">Birds</a>
@@ -42,7 +42,7 @@
                     <a href="#">Cats</a>
                 </li>
                 <li>
-                    <a href="petshop.html" target="_self">Dogs</a>
+                    <a href="petshop.php" target="_self">Dogs</a>
                 </li>
                 <li>
                     <a href="#">Rodent</a>
@@ -51,7 +51,7 @@
                     <a href="#">Rabbit</a>
                 </li>
                 <li>
-                    <a href="login.html" target="_self"><i class="fa-solid fa-user"></i></a>
+                    <a href="login.php" target="_self"><i class="fa-solid fa-user"></i></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>

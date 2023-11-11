@@ -77,6 +77,7 @@ button{
 .navegacion{
     display: flex;
     background-color: #FFCC63;
+    height: 100px;
 }
 .navegacion ul{
     width: 100%;
