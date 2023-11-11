@@ -65,7 +65,7 @@
         <div class="register">
             <div class="container">
                 <i class="fab fa-wpforms"></i>
-                <form action="php/registrarse.php" method="POST">
+                <form action="registrarse.php" method="POST">
                 <?php if (isset($_GET['error'])) { ?>
                     <p class="error"><?php echo $_GET['error']?></p>
                 <?php } ?>
@@ -78,7 +78,7 @@
                 <input type="password" id="password" name="password" placeholder="Password"><br><br>
                 <input type="password" id="rpassword" name="rpassword" placeholder="Repeat Password"><br><br>
                 <button type="submit">Sign Up</button>
-                <a href="php/login.php">Sign In</a>
+                <a href="login.php">Sign In</a>
                 </form>
             </div>
         </div>

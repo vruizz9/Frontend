@@ -16,15 +16,15 @@
         $Password = validate($_POST['password']);
 
         if (empty($User)) {
-            header("Location: ../login.php?error=User is required");
+            header("Location: login.php?error=User is required");
             exit();
         }elseif (empty($Password)) {
-            header("Location: ../login.php?error=Password is required");
+            header("Location: login.php?error=Password is required");
             exit();
         }else{
 
             //Variables que guardaran los datos de la db
-            $sql = "SELECT * FROM usuarios WHERE user ='$User'";
+            $sql = "SELECT * FROM users WHERE user ='$User'";
             $query = mysqli_query($conexion, $sql);
 
             if (mysqli_num_rows($query) == 1) {
@@ -44,25 +44,25 @@
 
                         echo "<script>
                             alert('Bienvenido $name');
-                            location.href = '../home.php.'
+                            location.href = 'home.php.'
                         </script>";
                     }else {
-                        header("Location: ../login.php?error=The user or password is incorrect.");
+                        header("Location: login.php?error=The user or password is incorrect.");
                         exit();
                     }
                 }else {
-                    header("Location: ../login.php?error=The user or password is incorrect.");
+                    header("Location: login.php?error=The user or password is incorrect.");
                     exit();
                 }
 
             }else {
-                header("Location: ../login.php?error=The user or password is incorrect.");
+                header("Location: login.php?error=The user or password is incorrect.");
                 exit();
             }
 
         }
     }else{
-        header("Location: ../login.php");
+        header("Location: login.php");
         exit();
     }
 ?>

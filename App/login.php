@@ -65,7 +65,7 @@
         <div class="login">
             <div class="container">
                 <i class="fa-solid fa-user"></i>
-                <form action="php/inicio_sesion.php" method="POST">
+                <form action="inicio_sesion.php" method="POST">
                 <?php if (isset($_GET['error'])) { ?>
                         <p class="error"><?php echo $_GET['error']?></p>
                 <?php } ?>
@@ -79,7 +79,7 @@
                     <a href="#">Forgot password?</a>
                 </div>
                 <button type="submit">Sign In</button>
-                <p class="register">Don't have an account? <span><a href="php/register.php">Register here</a></span></p>
+                <p class="register">Don't have an account? <span><a href="register.php">Register here</a></span></p>
                 </form>
             </div>
         </div>

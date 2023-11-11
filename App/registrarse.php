@@ -37,7 +37,7 @@
             //Hashing de contraseña
             $Password = password_hash($Password, PASSWORD_DEFAULT);
 
-            $sql = "SELECT * FROM usuarios WHERE user = '$User'";
+            $sql = "SELECT * FROM users WHERE user = '$User'";
             $result = mysqli_query($conexion, $sql);
 
             //Validación de formularios 
@@ -46,7 +46,7 @@
                 exit();
             }else{
                 //Insersión de datos nuevos a la bd
-                $sql2 = "INSERT INTO usuarios(name, user, password) VALUES('$Name','$User','$Password')";
+                $sql2 = "INSERT INTO users(name, user, password) VALUES('$Name','$User','$Password')";
                 $result2 = mysqli_query($conexion, $sql2);
 
                 if ($result2) {
